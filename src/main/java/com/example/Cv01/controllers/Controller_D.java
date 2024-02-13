@@ -1,9 +1,13 @@
-package controllers;
+package com.example.Cv01.controllers;
 
-import com.example.Cv01.Greeting;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import com.example.Cv01.services.Greeting;
 
+@Controller
 public class Controller_D {
 
+    @Autowired
     private Greeting greetingService;
 
     public void setGreetingService(Greeting greetingService){

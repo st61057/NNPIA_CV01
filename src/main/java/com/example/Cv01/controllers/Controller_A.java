@@ -1,18 +1,13 @@
-package controllers;
+package com.example.Cv01.controllers;
 
-import com.example.Cv01.Greeting;
+import com.example.Cv01.services.Greeting;
 import org.springframework.stereotype.Controller;
 
 @Controller
 public class Controller_A {
 
-    private final Greeting greetingService;
-
-    public Controller_A() {
-        greetingService = new Greeting();
-    }
-
     public String greetingA() {
+        Greeting greetingService = new Greeting();
         return greetingService.sayGreeting();
     }
 

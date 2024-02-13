@@ -1,6 +1,6 @@
-package controllers;
+package com.example.Cv01.controllers;
 
-import com.example.Cv01.Greeting;
+import com.example.Cv01.services.Greeting;
 import org.springframework.stereotype.Controller;
 
 @Controller

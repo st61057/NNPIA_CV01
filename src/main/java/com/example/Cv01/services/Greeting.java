@@ -1,7 +1,8 @@
-package com.example.Cv01;
+package com.example.Cv01.services;
 
-import services.GreetingService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Greeting implements GreetingService {
     @Override
     public String sayGreeting() {

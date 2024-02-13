@@ -1,18 +1,14 @@
-package controllers;
+package com.example.Cv01.controllers;
 
-import com.example.Cv01.Greeting;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 public class Controller_BTest {
 
+    @Autowired
     Controller_B controllerB;
-    @BeforeEach
-    void setUp() {
-        controllerB = new Controller_B(new Greeting());
-    }
 
     @Test
     void testControllerB() {
