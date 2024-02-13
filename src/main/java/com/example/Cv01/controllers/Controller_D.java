@@ -7,9 +7,9 @@ import com.example.Cv01.services.Greeting;
 @Controller
 public class Controller_D {
 
-    @Autowired
     private Greeting greetingService;
 
+    @Autowired
     public void setGreetingService(Greeting greetingService){
         this.greetingService = greetingService;
     }
